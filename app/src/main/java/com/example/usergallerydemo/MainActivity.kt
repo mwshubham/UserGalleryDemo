@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvGallery.adapter = adapter
         binding.rvGallery.addItemDecoration(
             StaggeredGridLayoutManagerEqualSpacingItemDecoration(
-                resources.getDimension(R.dimen.min_spacing).toInt()
+                resources.getDimension(R.dimen.default_spacing).toInt()
             )
         )
         viewModel.images.observe(this, Observer {
